@@ -8,7 +8,7 @@ document.querySelectorAll('button').forEach(function(button) {
         // Shared GIFs array
         const gifs = [
             "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubububu.gif",
-            "assets/tenor,gif"
+            "assets/tenor.gif"
         ]
 
         // Determine messages based on button ID
