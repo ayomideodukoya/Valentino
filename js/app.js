@@ -140,10 +140,10 @@ document.querySelectorAll('button').forEach(function(button) {
         if(e.target.id === "If I don't, who will?") {
             document.querySelector('#particles-js').style.display = "none" 
             const messages = [
-                'You\'re the one who lights up my world 🌟',,
+                'You\'re the one who lights up my world 🌟',
                 "You're my Wonder Girl!!", 
                 "You make my heart smile! 💕",
-                'IY, my Love', 
+                'IY, my Love'
             ]
             const random = Math.floor(Math.random() * messages.length);
             document.querySelector('h1').innerText = messages[random]
