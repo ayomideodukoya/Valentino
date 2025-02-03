@@ -137,14 +137,13 @@ document.querySelectorAll('button').forEach(function(button) {
             
         }
 
-        if(e.target.id === "no") {
+        if(e.target.id === "If I don't, who will?") {
             document.querySelector('#particles-js').style.display = "none" 
             const messages = [
-                'Why not?', 'Your answer makes me sad', 'Pleasee be my valentine', 
-                'b- b- but... why :(', 'You must say yes', 'I know you want to',
-                'Wrong answer!', 'You must have misclicked...', 'This hurts me',
-                'I cannot believe this', 'Am I not worthy?', 'I did not expect this',
-                'So much effort to be denied :('
+                'You\'re the one who lights up my world 🌟',,
+                "You're my Wonder Girl!!", 
+                "You make my heart smile! 💕",
+                'IY, my Love', 
             ]
             const random = Math.floor(Math.random() * messages.length);
             document.querySelector('h1').innerText = messages[random]
