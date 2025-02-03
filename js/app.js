@@ -8,6 +8,7 @@ document.querySelectorAll('button').forEach(function(button) {
         // Shared GIFs array
         const gifs = [
             "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubububu.gif",
+            "https://media.giphy.com/media/l4pTdcifPZLpDjL1e/giphy.gif?cid=790b7611qb7r6qjnnpl2y2lywsy2yhe18st7j7i8ekunijx6&ep=v1_gifs_search&rid=giphy.gif&ct=g",
             "assets/tenor.gif"
         ]
 
