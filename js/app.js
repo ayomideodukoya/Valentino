@@ -147,7 +147,7 @@ document.querySelectorAll('button').forEach(function(button) {
             ]
             const random = Math.floor(Math.random() * messages.length);
             document.querySelector('h1').innerText = messages[random]
-            document.querySelector("#gif").src = "https://media.tenor.com/RJgIui1E_2QAAAAj/teddy-bear.gif"
+            document.querySelector("#gif").src = "https://tenor.com/ixSumlqGI0B.gif"
             
         }
     })
