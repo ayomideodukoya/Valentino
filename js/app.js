@@ -1,34 +1,54 @@
-const particles = {
-    
-}
+const particles = {}
 
 document.querySelectorAll('button').forEach(function(button) {
     button.addEventListener('click', function(e) {
-        if (e.target.id === 'yes') {
-            document.querySelector('#particles-js').style.display = "block"
-            const messages = [
-                'YAY, I LOVE YOU!', 'This makes me so happy!', 'Yessss!', 'OMG! She said yes :)',
-                'You choose the right answer', 'You made my day', "You've made my heart flutter!",
-                "You're my sunshine on a cloudy day!", "You mean the world to me", 'Y- you actually said yes 🥲'
-                
-            ] 
-            const random = Math.floor(Math.random() * messages.length);
-            document.querySelector('h1').innerText = messages[random]       
-            document.querySelector('#gif').src = "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubududu.gif"            
+        // Show particles for both scenarios
+        document.querySelector('#particles-js').style.display = "block"
 
-            particlesJS('particles-js', {
-                "particles": {
-                    "number": {
+        // Shared GIFs array
+        const gifs = [
+            "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubububu.gif",
+            "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnc1bWtucjZndDd6cjVuand3OHM1djc4azdhZGx1ejUxOWhnMWFwYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12afltvVzJIesM/giphy.gif",
+            "https://media.giphy.com/media/jIL3lq9Ah00tG/giphy.gif?cid=ecf05e478y1cyps0x7alrcoewswgvmj7j314zn2fkw0mu3zk&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+            
+        ]
+
+        // Determine messages based on button ID
+        let messages;
+        if (e.target.id === 'yes') {
+            messages = [
+                'YAY, I LOVE YOU!', 'This makes me so happy!', 'Yessss!',
+                'You chose the right answer', 'You made my day', "You've made my heart flutter!",
+                "You're my sunshine on a cloudy day!", "You mean the world to me"
+            ]
+        } else if (e.target.id === "If I don't, who will?") {
+            messages = [
+                'You\'re the one who lights up my world 🌟',
+                "You're my Wonder Girl!!", 
+                "You make my heart smile! 💕",
+                'IY, my Love'
+            ]
+        }
+
+        const randomMessageIndex = Math.floor(Math.random() * messages.length);
+        const randomGifIndex = Math.floor(Math.random() * gifs.length);
+
+        document.querySelector('h1').innerText = messages[randomMessageIndex]       
+        document.querySelector('#gif').src = gifs[randomGifIndex]            
+
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
                     "value": 80,
                     "density": {
                         "enable": true,
                         "value_area": 800
                     }
-                    },
-                    "color": {
+                },
+                "color": {
                     "value": "#FF0000"
-                    },
-                    "shape": {
+                },
+                "shape": {
                     "type": "image",
                     "stroke": {
                         "width": 0,
@@ -42,8 +62,8 @@ document.querySelectorAll('button').forEach(function(button) {
                         "width": 50,
                         "height": 50
                     }
-                    },
-                    "opacity": {
+                },
+                "opacity": {
                     "value": 0.5,
                     "random": false,
                     "anim": {
@@ -52,8 +72,8 @@ document.querySelectorAll('button').forEach(function(button) {
                         "opacity_min": 0.1,
                         "sync": false
                     }
-                    },
-                    "size": {
+                },
+                "size": {
                     "value": 50,
                     "random": true,
                     "anim": {
@@ -62,15 +82,15 @@ document.querySelectorAll('button').forEach(function(button) {
                         "size_min": 0,
                         "sync": false
                     }
-                    },
-                    "line_linked": {
+                },
+                "line_linked": {
                     "enable": true,
                     "distance": 32.06824121731046,
                     "color": "#ffffff",
                     "opacity": 0.03206824121731046,
                     "width": 0
-                    },
-                    "move": {
+                },
+                "move": {
                     "enable": true,
                     "speed": 3,
                     "direction": "bottom",
@@ -83,11 +103,11 @@ document.querySelectorAll('button').forEach(function(button) {
                         "rotateX": 600,
                         "rotateY": 1200
                     }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
                     "onhover": {
                         "enable": true,
                         "mode": "repulse"
@@ -97,12 +117,12 @@ document.querySelectorAll('button').forEach(function(button) {
                         "mode": "bubble"
                     },
                     "resize": true
-                    },
-                    "modes": {
+                },
+                "modes": {
                     "grab": {
                         "distance": 400,
                         "line_linked": {
-                        "opacity": 1
+                            "opacity": 1
                         }
                     },
                     "bubble": {
@@ -122,33 +142,17 @@ document.querySelectorAll('button').forEach(function(button) {
                     "remove": {
                         "particles_nb": 2
                     }
-                    }
-                },
-                "retina_detect": true,
-                "config_demo": {
+                }
+            },
+            "retina_detect": true,
+            "config_demo": {
                 "hide_card": false,
                 "background_color": "#b61924",
                 "background_image": "",
                 "background_position": "50% 50%",
                 "background_repeat": "no-repeat",
                 "background_size": "cover"
-                }
-            });
-            
-        }
-
-        if(e.target.id === "If I don't, who will?") {
-            document.querySelector('#particles-js').style.display = "none" 
-            const messages = [
-                'You\'re the one who lights up my world 🌟',
-                "You're my Wonder Girl!!", 
-                "You make my heart smile! 💕",
-                'IY, my Love'
-            ]
-            const random = Math.floor(Math.random() * messages.length);
-            document.querySelector('h1').innerText = messages[random]
-            document.querySelector("#gif").src = "assets/tenor.gif"
-            
-        }
+            }
+        });
     })
 })
