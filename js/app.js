@@ -9,7 +9,8 @@ document.querySelectorAll('button').forEach(function(button) {
         const gifs = [
             "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubububu.gif",
             "https://media.giphy.com/media/l4pTdcifPZLpDjL1e/giphy.gif?cid=790b7611qb7r6qjnnpl2y2lywsy2yhe18st7j7i8ekunijx6&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-            "assets/tenor.gif"
+            "https://media.giphy.com/media/jIL3lq9Ah00tG/giphy.gif?cid=ecf05e478y1cyps0x7alrcoewswgvmj7j314zn2fkw0mu3zk&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+            
         ]
 
         // Determine messages based on button ID
