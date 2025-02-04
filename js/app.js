@@ -8,7 +8,7 @@ document.querySelectorAll('button').forEach(function(button) {
         // Shared GIFs array
         const gifs = [
             "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubububu.gif",
-            "https://media.giphy.com/media/l4pTdcifPZLpDjL1e/giphy.gif?cid=790b7611qb7r6qjnnpl2y2lywsy2yhe18st7j7i8ekunijx6&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+            "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnc1bWtucjZndDd6cjVuand3OHM1djc4azdhZGx1ejUxOWhnMWFwYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12afltvVzJIesM/giphy.gif",
             "https://media.giphy.com/media/jIL3lq9Ah00tG/giphy.gif?cid=ecf05e478y1cyps0x7alrcoewswgvmj7j314zn2fkw0mu3zk&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             
         ]
