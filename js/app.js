@@ -19,7 +19,7 @@ document.querySelectorAll('button').forEach(function(button) {
             messages = [
                 'YAY, I LOVE YOU!', 'This makes me so happy!', 'Yessss!',
                 'You chose the right answer', 'You made my day', "You've made my heart flutter!",
-                "You're my sunshine on a cloudy day!", "You mean the world to me", 'Y- you actually said yes 🥲'
+                "You're my sunshine on a cloudy day!", "You mean the world to me"
             ]
         } else if (e.target.id === "If I don't, who will?") {
             messages = [
